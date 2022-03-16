@@ -73,4 +73,24 @@ body {
 .navanchor {
   color: white;
 }
+.newsHeader{
+  display: flex;
+  border: 1px solid black;
+  
+}
+.date{
+  text-align: right;
+  
+}
+.newsContainer{
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+}
+.newsArea{
+  margin: 40px;
+}
+.detailButton{
+  margin: 40px;
+}
 

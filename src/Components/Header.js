@@ -5,7 +5,8 @@ export const Header = (props) => {
   return (
     <header className="siteheader">
         <div className="logo">
-            <i class='bx bxs-hot'></i>
+            <i className='bx bxs-hot'></i>
+            <h1>WarmKing</h1>
         </div>
         <nav>
             <ul className="navmenu">
