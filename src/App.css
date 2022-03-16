@@ -6,7 +6,7 @@
   --header-background-color: #000;
   --text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
   --border: 1px solid rgba(0,0,0,.3);
-  --active-color: green;
+  --active-color: blueviolet;
 }
 
 * {
@@ -76,21 +76,37 @@ body {
 .newsHeader{
   display: flex;
   border: 1px solid black;
-  
+  gap: 200px;
 }
 .date{
   text-align: right;
-  
 }
 .newsContainer{
   display: flex;
-  border: 1px solid black;
+  border: var(--border);
   justify-content: center;
+  padding: 40px;
+
 }
 .newsArea{
-  margin: 40px;
+  margin-bottom: 40px;
+  padding: 100px;
+  border: var(--border);
 }
 .detailButton{
-  margin: 40px;
+  list-style: none;
+  color: var(--header-background-color);
+  padding: 4px 10px;
+  border: var(--border);
+  border-radius: 8px;
+  background-color: var(--active-color);
+}
+.detailButton:hover{
+  color: var(--header-text-color);
+  cursor: pointer;
+}
+
+.backToHomeButton{
+  
 }
 
