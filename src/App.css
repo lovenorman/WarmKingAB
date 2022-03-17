@@ -63,7 +63,7 @@ body {
 .navanchor {
   color: white;
 }
-.main{
+main{
   min-height: 100vh;
 }
 .newsHeader{
@@ -94,12 +94,12 @@ body {
   color: var(--header-text-color);
   cursor: pointer;
 }
-
 .contactform{
-  padding: 40px;
+  padding: 100px;
   margin: 100px;
   align-items: center;
   justify-content: center;
+  border: 1px solid black;
 }
 .form-control{
   border-radius: 5px;
