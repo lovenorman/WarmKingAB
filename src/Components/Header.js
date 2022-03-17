@@ -10,7 +10,7 @@ export const Header = (props) => {
         </div>
         <nav>
             <ul className="navmenu">
-                <HeaderMenuItem text="Home"  onPageMenuClick={props.onPageMenuClick}    activePage={props.activePage} /> 
+                <HeaderMenuItem text="Home"  onPageMenuClick={props.onPageMenuClick} activePage={props.activePage} /> 
                 <HeaderMenuItem text="Products" onPageMenuClick={props.onPageMenuClick} activePage={props.activePage} />
                 <HeaderMenuItem text="Contact" onPageMenuClick={props.onPageMenuClick} activePage={props.activePage} />
                 <HeaderMenuItem text="Privacy" onPageMenuClick={props.onPageMenuClick} activePage={props.activePage} />

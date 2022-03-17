@@ -3,12 +3,12 @@ import React from 'react'
 export const NewsDetailButton = (props) => {
 
     const IWasClicked = () =>{
-        props.onDetailButtonClick(props.text)
+        props.onDetailButtonClick(props.id)
     }
   return (
     <li>
         <a onClick={IWasClicked}//Funktion skapas i funktionen NewsDetailButton
-        className={`detailButton ${props.activePage == props.text ? 'active' : ''}`}
+        className='detailButton'
         href="#">
             { props.text }
         </a>

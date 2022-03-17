@@ -12,11 +12,11 @@ export const NewsTemplate = (props) => {
         <h3 className='date'>{props.news.date}</h3>
     </header>
     <main className='newsContainer'>
-        <p className='newsText'>{props.news.longtext}
+        <p className='newsText'>{props.news.shorttext}
         </p>
         <div>
-            <ul className='backToHomeButton'>
-                <HeaderMenuItem text="Home"  onPageMenuClick={props.onPageMenuClick}  activePage={props.activePage} /> 
+            <ul className='detailButton'>
+                <NewsDetailButton text="More" id={props.news.id} onDetailButtonClick={props.onDetailButtonClick} />
             </ul>
         </div>
     </main>

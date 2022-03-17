@@ -3,11 +3,11 @@ import {NewsTemplate} from './Templates/NewsTemplate'
 
 import { news } from './Data/NewsData'
 
-export const News = () => {
+export const News = (props) => {
   return (
     <div>
         {
-            news.map((thenews,i)=> <NewsTemplate key={i} news={thenews} />)
+            news.map((thenews,i)=> <NewsTemplate onDetailButtonClick={props.onDetailButtonClick} key={i} news={thenews} />)
         }
     </div>
   )
