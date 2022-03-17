@@ -6,9 +6,8 @@
   --header-background-color: #000;
   --text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
   --border: 1px solid rgba(0,0,0,.3);
-  --active-color: green;
+  --active-color: blueviolet;
 }
-
 * {
   padding: 0;
   margin: 0;
@@ -17,12 +16,10 @@
   outline: none;
   scroll-behavior: smooth;
 }
-
 body {
   background-color: var(--background-color);
   font-family: 'Lato', sans-serif;
 }
-
 .siteheader {
   height: 80px;
   padding: 40px;
@@ -33,32 +30,25 @@ body {
   font-weight: 700;
   background-color: var(--header-background-color);
 }
-
 .navmenu {
   display: flex;
   list-style: none;
   gap: 25px;
 }
-
 .navicons {
   display: flex;
   list-style: none;
   gap: 5px;
 }
-
 .logo {
   font-size: 26px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
-
-.logoicon {
-  font-size: 26px;
-  color: var(--secondary-color);
-}
-
 .navicon {
   font-size: 26px;
 }
-
 .headeranchor {
   color: white;
   padding: 4px 10px;
@@ -73,24 +63,57 @@ body {
 .navanchor {
   color: white;
 }
+main{
+  min-height: 100vh;
+}
 .newsHeader{
   display: flex;
   border: 1px solid black;
-  
-}
-.date{
-  text-align: right;
-  
+  gap: 200px;
 }
 .newsContainer{
   display: flex;
-  border: 1px solid black;
+  border: var(--border);
   justify-content: center;
+  padding: 40px;
 }
 .newsArea{
-  margin: 40px;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 .detailButton{
-  margin: 40px;
+  list-style: none;
+  color: var(--header-background-color);
+  padding: 4px 10px;
+  border: var(--border);
+  border-radius: 8px;
+  background-color: var(--active-color);
 }
-
+.detailButton:hover{
+  color: var(--header-text-color);
+  cursor: pointer;
+}
+.contactform{
+  padding: 100px;
+  margin: 100px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.form-control{
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.form-group{
+  margin-top: 15px;
+  display: flex;
+}
+.privacyContainer{
+  padding: 40px;
+  margin: 20px;
+}
+.footer{
+  padding: 20px;
+}

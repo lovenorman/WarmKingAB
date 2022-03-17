@@ -1,26 +1,14 @@
 import React from 'react'
-import { NewsDetailButton } from './NewsDetailButton'
+import {NewsTemplate} from './Templates/NewsTemplate'
 
-export const News = () => {
+import { news } from './Data/NewsData'
+
+export const News = (props) => {
   return (
-    <div className='newsArea'>
-        <h1>Nyheter</h1>
-    
-    
-        <header className='newsHeader'>
-            <h3 className='newsheading'>Lorem</h3>
-            <span className='date'>2022-03-15</span>
-        </header>
-        <main className='newsContainer'>
-            <p className='newsText'>Lorem blalkjfkljgkjahgkjahgkjahgkahgkjahgkjahkjgahkjghakjghjkhgkjshgkjshgkjsgkjsgkjsgkjsdghskjhgskjhfkjshgkjshgkjhjks
-            </p>
-            <div>
-                <ul className='detailButton'>
-                    <NewsDetailButton/>
-                </ul>
-            </div>
-            
-        </main>
+    <div>
+        {
+            news.map((thenews,i)=> <NewsTemplate onDetailButtonClick={props.onDetailButtonClick} key={i} news={thenews} />)
+        }
     </div>
   )
 }
