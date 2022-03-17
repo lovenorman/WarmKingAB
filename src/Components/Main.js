@@ -8,12 +8,12 @@ import { Products } from './Products'
 //Constanten main tilldelas en funktion som returnar följande
 export const Main = (props) => {
   return (
-    <main>
+    <main className="main">
         {props.activePage == 'Home' && <Home onDetailButtonClick={props.onDetailButtonClick}/>  }
         {props.activePage == 'Products' && <Products onDetailButtonClick={props.onDetailButtonClick}/>}
         {props.activePage == 'Contact' && <Contact onDetailButtonClick={props.onDetailButtonClick}/>}
         {props.activePage == 'Privacy' && <Privacy onDetailButtonClick={props.onDetailButtonClick}/>}
-        {props.activePage == 'NewsDetails' && <NewsDetails id={props.id} onDetailButtonClick={props.onDetailButtonClick}/>}
+        {props.activePage == 'NewsDetails' && <NewsDetails news={props.news} onDetailButtonClick={props.onDetailButtonClick}/>}
     </main>
   )
 }

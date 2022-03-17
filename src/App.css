@@ -63,7 +63,7 @@ body {
 .navanchor {
   color: white;
 }
-main{
+.main{
   min-height: 100vh;
 }
 .newsHeader{
@@ -93,6 +93,9 @@ main{
 .detailButton:hover{
   color: var(--header-text-color);
   cursor: pointer;
+}
+.backToHomeButton{
+  list-style: none;
 }
 .contactform{
   padding: 100px;

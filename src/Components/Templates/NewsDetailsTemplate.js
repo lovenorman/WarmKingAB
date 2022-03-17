@@ -1,7 +1,8 @@
 import React from 'react'
-import { NewsDetailButton } from '../NewsDetailButton'
+import { HeaderMenuItem } from '../HeaderMenuItem'
 
-export const NewsTemplate = (props) => {
+
+export const NewsDetailsTemplate = (props) => {
   return (
     <div className='newsArea'>
         <h1>Nyheter</h1>

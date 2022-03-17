@@ -3,14 +3,15 @@ import React from 'react'
 export const NewsDetailButton = (props) => {
 
     const IWasClicked = () =>{
-        props.onDetailButtonClick(props.id)
+      console.log(props.news);
+        props.onDetailButtonClick(props.news)
     }
   return (
     <li>
         <a onClick={IWasClicked}//Funktion skapas i funktionen NewsDetailButton
-        className='detailButton'
-        href="#">
-            { props.text }
+          className='detailButton'
+          href="#">
+              { props.text }
         </a>
     </li>
   )

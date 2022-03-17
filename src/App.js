@@ -14,16 +14,16 @@ function App() {
   }
 
   const onDetailButtonClick =(id) =>{
+    setNews(id)
     setActivePage('NewsDetails')
-    setId(id)
   }
 
-  const [id, setId] = useState(0)
+  const [news, setNews] = useState(0)
   
   return (
     <div>
       <Header activePage={activePage} onPageMenuClick={changeActivePage} />
-      <Main activePage={activePage} id={id} onDetailButtonClick={onDetailButtonClick}/>
+      <Main activePage={activePage} news={news} onDetailButtonClick={onDetailButtonClick}/>
       <Footer/>
     </div>
   );
