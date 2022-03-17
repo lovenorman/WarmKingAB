@@ -16,7 +16,7 @@ export const NewsTemplate = (props) => {
         </p>
         <div>
             <ul className='detailButton'>
-                <NewsDetailButton text="More" id={props.news.id} onDetailButtonClick={props.onDetailButtonClick} />
+                <NewsDetailButton text="More" news={props.news} onDetailButtonClick={props.onDetailButtonClick} />
             </ul>
         </div>
     </main>
