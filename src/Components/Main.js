@@ -14,7 +14,6 @@ export const Main = (props) => {
         {props.activePage == 'Contact' && <Contact onDetailButtonClick={props.onDetailButtonClick}/>}
         {props.activePage == 'Privacy' && <Privacy onDetailButtonClick={props.onDetailButtonClick}/>}
         {props.activePage == 'NewsDetails' && <NewsDetails id={props.id} onDetailButtonClick={props.onDetailButtonClick}/>}
-        
     </main>
   )
 }
