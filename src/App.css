@@ -5,7 +5,7 @@
   --header-text-color: white;
   --header-background-color: #000;
   --text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
-  --border: 1px solid rgba(0,0,0,.3);
+  --border: 1px solid black;
   --active-color: blueviolet;
 }
 * {
@@ -15,6 +15,7 @@
   text-decoration: none;
   outline: none;
   scroll-behavior: smooth;
+  border: none;
 }
 body {
   background-color: var(--background-color);
@@ -66,6 +67,10 @@ body {
 .main{
   min-height: 100vh;
 }
+.newsH1{
+	margin-left: 200px;
+  margin-top: 100px;
+}
 .newsHeader{
   display: flex;
   border: 1px solid black;
@@ -86,7 +91,6 @@ body {
   list-style: none;
   color: var(--header-background-color);
   padding: 4px 10px;
-  border: var(--border);
   border-radius: 8px;
   background-color: var(--active-color);
 }
@@ -102,16 +106,25 @@ body {
   margin: 100px;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: var(--border);
 }
 .form-control{
   border-radius: 5px;
   margin-bottom: 10px;
   margin-left: 10px;
+  font-size: large;
 }
 .form-group{
   margin-top: 15px;
   display: flex;
+  font-size: large
+}
+.submitButton{
+  color: var(--header-background-color);
+  padding: 4px 10px;
+  border-radius: 8px;
+  background-color: var(--active-color);
+  font-size: 20px;
 }
 .privacyContainer{
   padding: 40px;

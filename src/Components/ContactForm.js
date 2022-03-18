@@ -22,7 +22,7 @@ export const ContactForm = () => {
               <label htmlFor="newMessage">Meddelande</label>
               <textarea id="message" className="form-control" rows="4" cols="50" name="message"/>
             </div><br/>
-            <input id="submitNewButton" type="submit" className="btn btn-primary" value="skicka"/>
+            <input id="submitNewButton" type="submit" className="submitButton" value="Submit"/>
         </form>
     </div>
     )
